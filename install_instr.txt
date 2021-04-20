@@ -1,26 +1,14 @@
 # CREATE k8-master VM using gcloud command
 # not necessary if created using the browser interface
-gcloud compute instances create k8-master \
---machine-type=e2-medium \
---image=ubuntu-1804-bionic-v20201014 \
---image-project=ubuntu-os-cloud \
---boot-disk-size=50GB
+gcloud compute instances create k8-master --machine-type=e2-medium --image=ubuntu-1804-bionic-v20201014 --image-project=ubuntu-os-cloud --boot-disk-size=50GB --zone=asia-south1-a
 
 # CREATE k8-worker VM using gcloud command
 # not necessary if created using the browser interface
-gcloud compute instances create k8-worker1 \
---machine-type=e2-medium \
---image=ubuntu-1804-bionic-v20201014 \
---image-project=ubuntu-os-cloud \
---boot-disk-size=50GB
+gcloud compute instances create k8-worker1 --machine-type=e2-medium --image=ubuntu-1804-bionic-v20201014 --image-project=ubuntu-os-cloud --boot-disk-size=50GB --zone=asia-south1-a
 
 # CREATE k8-worker VM using gcloud command
 # not necessary if created using the browser interface
-gcloud compute instances create k8-worker2 \
---machine-type=e2-medium \
---image=ubuntu-1804-bionic-v20201014 \
---image-project=ubuntu-os-cloud \
---boot-disk-size=50GB
+gcloud compute instances create k8-worker2 --machine-type=e2-medium --image=ubuntu-1804-bionic-v20201014 --image-project=ubuntu-os-cloud --boot-disk-size=50GB --zone=asia-south1-a
 
 # you can use a region near you
 https://cloud.google.com/compute/docs/regions-zones
